@@ -1,0 +1,39 @@
+---
+dependencies:
+  - src: geerlingguy.pip
+    name: pip
+  - src: yatesr.timezone
+    name: timezone
+  - src: https://github.com/nightsnake/ansible-role-inputrc
+    name: inputrc
+  - src: https://github.com/nightsnake/bash_smoothly_ps
+    name: bash_smoothly_ps
+  - src: ericsysmin.chrony
+    name: chrony
+  - src: https://github.com/nightsnake/ansible-resolv
+    name: resolver
+  # os_groups
+  # os_users
+  - src: MichaelRigart.aliases
+    name: aliases
+  - src: Oefenweb.postfix
+    name: postfix
+  - src: dev-sec.ssh-hardening
+    name: ssh-hardening
+  - src: weareinteractive.sudo
+    name: sudoers
+  - src: robertdebock.locale
+    name: locale
+  - src: ontic.hostname
+    name: hostname
+
+galaxy_info:
+  author: Aleksey Uchakin a.k.a. Night_Snake
+  description: Common role (just meta role for install all the others)
+  company: Nixman.info
+  min_ansible_version: 2.6.5
+  github_branch:
+  - name: Ubuntu
+    versions:
+    - xenial
+    - bionic
