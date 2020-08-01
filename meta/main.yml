@@ -8,7 +8,7 @@ dependencies:
     name: inputrc
   - src: https://github.com/nightsnake/bash_smoothly_ps
     name: bash_smoothly_ps
-  - src: ericsysmin.chrony
+  - src: https://github.com/nightsnake/ansible-role-chrony
     name: chrony
   - src: https://github.com/nightsnake/ansible-resolv
     name: resolver
