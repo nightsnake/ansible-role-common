@@ -1,31 +1,31 @@
 ---
 dependencies:
-  - src: geerlingguy.pip
-    name: pip
+  - src: ericsysmin.chrony
+    name: chrony
+  - src: ontic.hostname
+    name: hostname
+  - src: robertdebock.locale
+    name: locale
   - src: yatesr.timezone
     name: timezone
   - src: https://github.com/nightsnake/ansible-role-inputrc
     name: inputrc
   - src: https://github.com/nightsnake/bash_smoothly_ps
     name: bash_smoothly_ps
-  - src: https://github.com/nightsnake/ansible-role-chrony
-    name: chrony
-  - src: https://github.com/nightsnake/ansible-resolv
-    name: resolver
-  # os_groups
-  # os_users
   - src: MichaelRigart.aliases
     name: aliases
   - src: Oefenweb.postfix
     name: postfix
+  # os_groups
+  # os_users
   - src: dev-sec.ssh-hardening
     name: ssh-hardening
   - src: weareinteractive.sudo
     name: sudoers
-  - src: robertdebock.locale
-    name: locale
-  - src: ontic.hostname
-    name: hostname
+  - src: geerlingguy.pip
+    name: pip
+  - src: https://github.com/novomatic-tech/ansible-role-bash-profile
+    name: bash-profile
 
 galaxy_info:
   author: Aleksey Uchakin a.k.a. Night_Snake
