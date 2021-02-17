@@ -24,7 +24,7 @@ dependencies:
     name: sudoers
   - src: geerlingguy.pip
     name: pip
-  - src: https://github.com/novomatic-tech/ansible-role-bash-profile
+  - src: https://github.com/nightsnake/ansible-role-bash-profile
     name: bash-profile
 
 galaxy_info:
