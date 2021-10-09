@@ -10,12 +10,10 @@ dependencies:
     name: timezone
   - src: https://github.com/nightsnake/ansible-role-inputrc
     name: inputrc
-  - src: https://github.com/nightsnake/bash_smoothly_ps
-    name: bash_smoothly_ps
-  - src: MichaelRigart.aliases
-    name: aliases
-  - src: Oefenweb.postfix
-    name: postfix
+#  - src: MichaelRigart.aliases
+#    name: aliases
+#  - src: Oefenweb.postfix
+#    name: postfix
   # os_groups
   # os_users
   - src: dev-sec.ssh-hardening
