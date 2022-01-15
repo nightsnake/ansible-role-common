@@ -12,8 +12,8 @@ dependencies:
     name: inputrc
 #  - src: MichaelRigart.aliases
 #    name: aliases
-#  - src: Oefenweb.postfix
-#    name: postfix
+  - src: Oefenweb.postfix
+    name: postfix
   # os_groups
   # os_users
   - src: dev-sec.ssh-hardening
