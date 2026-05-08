@@ -9,6 +9,5 @@
     - inputrc
     - ssh
     - sudoers
-    - pip
     - bash
     - sysctl
