@@ -8,6 +8,5 @@
     - timezone
     - inputrc
     - ssh
-    - sudoers
     - bash
     - sysctl
