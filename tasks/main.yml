@@ -1,0 +1,14 @@
+- ansible.builtin.import_role:
+    name: "{{ item }}"
+  loop:
+    - users
+    - chrony
+    - hostname
+    - locale
+    - timezone
+    - inputrc
+    - ssh
+    - sudoers
+    - pip
+    - bash
+    - sysctl
