@@ -1,4 +1,4 @@
-- ansible.builtin.import_role:
+- ansible.builtin.include_role:
     name: "{{ item }}"
   loop:
     - users
@@ -7,6 +7,6 @@
     - locale
     - timezone
     - inputrc
-    - ssh
+    - ssh_hardening
     - bash
     - sysctl
