@@ -1,11 +1,15 @@
-- ansible.builtin.include_role:
+- name: Play common roles
+  ansible.builtin.include_role:
     name: "{{ item }}"
   loop:
     - users
+    - sudoers
+    - bash-profile
+    - bash_smoothly_ps
     - chrony
     - hostname
     - locale
     - timezone
     - inputrc
-    - ssh_hardening
-    - bash
+    - ssh-hardening
+  tags: ['common']

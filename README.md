@@ -4,19 +4,19 @@ Just a meta role for install all the needed roles
 
 ### Roles
 ```
-  - geerlingguy.pip
-  - yatesr.timezone
-  - https://github.com/nightsnake/ansible-role-inputrc
-  - https://github.com/nightsnake/bash_smoothly_ps
-  - ericsysmin.chrony
-  - https://github.com/nightsnake/ansible-resolv
-  - MichaelRigart.aliases
-  - Oefenweb.postfix
-  - dev-sec.ssh-hardening
-  - weareinteractive.sudo
-  - robertdebock.locale
-  - ontic.hostname
+  - yatesr.timezone as "timezone"
+  - https://github.com/nightsnake/ansible-role-inputrc as "inputrc"
+  - https://github.com/nightsnake/ansible-role-bash-profile as "bash-profile"
+  - https://github.com/nightsnake/bash_smoothly_ps as "bash_smoothly_ps"
+  - https://github.com/nightsnake/ansible-role-users.git as "users"
+  - ericsysmin.chrony as "chrony"
+  - dev-sec.ssh-hardening as "ssh-hardening"
+  - weareinteractive.sudo as "sudoers"
+  - robertdebock.locale as "locale"
+  - ontic.hostname as "hostname"
 ```
+Please don't forget to add roles above in your roles/requirements.yml
+
 ### Example playbook
 
 ```
