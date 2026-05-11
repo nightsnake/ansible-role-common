@@ -5,7 +5,6 @@
     - users
     - sudoers
     - bash-profile
-    - bash_smoothly_ps
     - chrony
     - hostname
     - locale
