@@ -1,0 +1,11 @@
+- ansible.builtin.include_role:
+    name: "{{ item }}"
+  loop:
+    - users
+    - chrony
+    - hostname
+    - locale
+    - timezone
+    - inputrc
+    - ssh_hardening
+    - bash
