@@ -38,7 +38,7 @@ collections:
 
 ```
 - hosts: all
-  become: yes
+  become: true
   gather_facts: no
   roles:
     - { role: ansible-role-common }
