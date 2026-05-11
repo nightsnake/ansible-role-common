@@ -3,19 +3,36 @@
 Just a meta role for install all the needed roles
 
 ### Roles
+
+This role import bunch of other roles via ansible.bulitin.import_role.
+You need to add these roles to you `roles/requirements.yml` manually.
+
+Example of requirements.yml
 ```
-  - yatesr.timezone as "timezone"
-  - https://github.com/nightsnake/ansible-role-inputrc as "inputrc"
-  - https://github.com/nightsnake/ansible-role-bash-profile as "bash-profile"
-  - https://github.com/nightsnake/bash_smoothly_ps as "bash_smoothly_ps"
-  - https://github.com/nightsnake/ansible-role-users.git as "users"
-  - ericsysmin.chrony as "chrony"
-  - dev-sec.ssh-hardening as "ssh-hardening"
-  - weareinteractive.sudo as "sudoers"
-  - robertdebock.locale as "locale"
-  - ontic.hostname as "hostname"
+roles:
+  - src: https://github.com/nightsnake/ansible-role-common
+    name: common
+  - src: ericsysmin.chrony
+    name: chrony
+  - src: ontic.hostname
+    name: hostname
+  - src: robertdebock.locale
+    name: locale
+  - src: yatesr.timezone
+    name: timezone
+  - src: https://github.com/nightsnake/ansible-role-inputrc
+    name: inputrc
+  - src: https://github.com/nightsnake/ansible-role-users.git
+    name: users
+  - src: weareinteractive.sudo
+    name: sudoers
+  - src: https://github.com/nightsnake/ansible-role-bash-profile
+    name: bash-profile    
+
+collections:
+  - name: devsec.hardening
+
 ```
-Please don't forget to add roles above in your roles/requirements.yml
 
 ### Example playbook
 

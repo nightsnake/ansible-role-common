@@ -11,5 +11,5 @@
     - locale
     - timezone
     - inputrc
-    - ssh-hardening
+    - ssh_hardening
   tags: ['common']
